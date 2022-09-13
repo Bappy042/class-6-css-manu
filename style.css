@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+nav{
+    background-color:skyblue;
+}
+nav ul li{
+    background-color: royalblue;
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    color: blueviolet;
+    background-color: brown;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 2px;
+    display: inline-block;
+}
+nav ul li ul{
+    position: absolute;
+    left: 10px;
+    top:120%;
+    visibility: hidden;
+    transition: .5s; 
+    opacity: 0;
+    
+}
+nav ul li ul li{
+    display: block;
+
+}
+nav ul li a:hover{
+    background-color:green;
+    transition: .5s;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    top:100%;
+    opacity: 1;
+}
